@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/KevinMorelo.github.io/static/css/main.9b060be4.css",
+    "main.js": "/KevinMorelo.github.io/static/js/main.b5fa293c.js",
+    "static/js/453.8adff7c1.chunk.js": "/KevinMorelo.github.io/static/js/453.8adff7c1.chunk.js",
+    "static/media/prueba1.jpg": "/KevinMorelo.github.io/static/media/prueba1.e29e3daf07c9856c5688.jpg",
+    "static/media/logo-120.svg": "/KevinMorelo.github.io/static/media/logo-120.0d8fa4cf023598b23061c3facaea3244.svg",
+    "static/media/logo-black-120.svg": "/KevinMorelo.github.io/static/media/logo-black-120.43664a6fef96a11079b111824daf7dc7.svg",
+    "index.html": "/KevinMorelo.github.io/index.html",
+    "main.9b060be4.css.map": "/KevinMorelo.github.io/static/css/main.9b060be4.css.map",
+    "main.b5fa293c.js.map": "/KevinMorelo.github.io/static/js/main.b5fa293c.js.map",
+    "453.8adff7c1.chunk.js.map": "/KevinMorelo.github.io/static/js/453.8adff7c1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b060be4.css",
+    "static/js/main.b5fa293c.js"
+  ]
+}
