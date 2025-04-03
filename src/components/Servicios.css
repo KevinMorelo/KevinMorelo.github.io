@@ -1,0 +1,133 @@
+/* Sección general */
+.section-service {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: white;
+}
+
+/* Título principal */
+#servicios h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+  margin-top: -20px;
+}
+
+#servicios h1:hover {
+  transform: scale(1.05);
+}
+
+/* Grid profesional para tarjetas */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Cambiado de 300px a 250px */
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* Tarjeta individual con altura fija */
+.service-card {
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(59, 59, 59, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+  min-height: 320px;
+  overflow: hidden;
+  padding-bottom: 30px; /* solo en la parte inferior */
+}
+
+/* Hover efecto */
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(59, 59, 59, 0.4);
+}
+
+/* Título del servicio */
+.service-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Descripción */
+.service-card p {
+  font-size: 1.05rem;
+  color: black;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+/* Botón */
+.service-card a {
+  display: inline-block;
+  margin-top: auto;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  color: black;
+  background-color: white;
+  border: 2px solid #915ff5;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  align-self: center;
+  box-shadow: 0 8px 25px rgba(145, 95, 245, 0.2);
+}
+
+.service-card a:hover {
+  color: #915ff5;
+  transform: scale(1.05);
+}
+
+.service-card .service-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: block;
+}
+
+
+.service-card h3,
+.service-card p {
+  padding: 0 20px;
+}
+
+
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .section-service {
+    padding: 40px 15px;
+  }
+
+  .service-card {
+    padding: 20px 15px;
+    min-height: 300px;
+  }
+
+  #servicios h1 {
+    font-size: 2rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .service-card p {
+    font-size: 1rem;
+  }
+}

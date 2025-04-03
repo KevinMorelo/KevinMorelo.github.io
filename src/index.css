@@ -1,0 +1,18 @@
+/* Fuente general */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap'); /* Fuente Inter */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap'); /* Fuente Fira Code */
+
+/* Cuerpo de la página */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif; /* Cambié la fuente a Inter para un diseño moderno */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; /* Elimina el desplazamiento horizontal */
+  padding: 0;
+}
+
+/* Estilo para el código */
+code {
+  font-family: 'Fira Code', monospace; /* Cambié la fuente a Fira Code, ideal para código */
+}

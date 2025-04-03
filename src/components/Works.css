@@ -1,0 +1,106 @@
+/* Sección general */
+.mywork-section {
+  background-color: #f1e3fe;
+  text-align: center;
+  min-height: 100vh; /* sección ocupa toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.mywork-section h2 {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 50px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.mywork-section h2:hover {
+  color: black;
+  transform: scale(1.05);
+}
+
+/* Grid */
+.mywork-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(350px, 1fr)); /* más ancho */
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+@media (max-width: 768px) {
+  .mywork-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Tarjetas */
+.mywork-card {
+  background-color: #ffffff;
+  border-radius: 25px;
+  padding: 30px 25px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  box-shadow: 0 10px 25px rgba(59, 59, 59, 0.4);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+
+.mywork-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(59, 59, 59, 0.4);
+}
+
+/* Ícono */
+.mywork-card .icon {
+  font-size: 2rem;
+  color: #915ff5;
+  flex-shrink: 0;
+}
+
+/* Texto */
+.mywork-card h3 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.mywork-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive ajustes */
+@media (max-width: 768px) {
+  .mywork-section {
+    padding: 60px 20px;
+  }
+
+  .mywork-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .mywork-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mywork-card {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .mywork-card .icon {
+    margin-bottom: 10px;
+  }
+}

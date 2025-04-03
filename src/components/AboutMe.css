@@ -1,0 +1,184 @@
+.about-section {
+  background-color: #f5f2ed;
+  padding: 80px 30px;
+  font-family: "Helvetica Neue", sans-serif;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.about-main-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  color: #222;
+}
+
+.about-text {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-header {
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto 50px;
+}
+
+.about-title h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: #222;
+}
+
+.about-title .highlight {
+  font-weight: 800;
+  color: #222;
+}
+
+.about-quote {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 15px;
+}
+
+.about-content {
+  display: flex;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.about-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-text p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.navbarAbout {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Distribuye el logo y el contenido */
+  align-items: center; /* Centra verticalmente los elementos */
+  padding: 10px 40px; /* Aumento el espacio a la derecha y a la izquierda */
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  background-color: #ffffff00; /* Fondo semi-transparente */
+  transition: background-color 0.3s ease-in-out;
+  overflow-x: hidden; /* Evita que los elementos se desborden horizontalmente */
+  max-width: 100%; /* Asegura que la barra no se salga del tamaño de la pantalla */
+}
+
+/* Logo */
+.navbarAbout .logo img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  max-width: 100%;
+  padding-left: 40px;
+  transition: color 0.3s ease, transform 0.3s ease; /* Agregar transición */
+}
+
+.navbarAbout .logo img:hover {
+  transform: scale(1.05);
+}
+
+/* Enlaces de la barra de navegación */
+.navbarAbout .nav-links {
+  display: flex;
+  justify-content: center; /* Centra los enlaces */
+  align-items: center;
+  gap: 40px; /* Espaciado uniforme entre los enlaces */
+  list-style: none;
+  margin-left: 10px; /* Ajuste de margen */
+}
+
+.navbarAbout .nav-links li {
+  list-style: none;
+}
+
+.navbarAbout .nav-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbarAbout .nav-links a:hover {
+  color: #915ff5; /* Efecto hover con color dorado */
+  transform: scale(1.05);
+}
+
+/* Estilo para el botón "Contáctanos" */
+.navbarAbout .btn-contacto {
+  color: #fffded;
+  padding: 8px 18px;
+  font-size: 0.9rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-left: 20px;
+  max-width: 200px;
+  text-align: center;
+  margin-right: 40px;
+  box-shadow: 0 8px 25px rgba(145, 95, 245, 0.2);
+  border: 2px solid #915ff5; /* Bordes de color */
+  display: inline-block;
+}
+
+.navbar .btn-contacto:hover {
+  color: #915ff5; /* Efecto hover con color dorado */
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-header {
+    text-align: center;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-title h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-text h2 {
+    font-size: 1.5rem;
+  }
+}
